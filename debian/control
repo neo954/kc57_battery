@@ -1,0 +1,16 @@
+Source: kc57-battery
+Maintainer: GONG Jie <gongjie.jie@gmail.com>
+Section: misc
+Priority: optional
+Build-Depends: debhelper (>= 11), dkms, dh-dkms
+Standards-Version: 3.9.1
+Vcs-Browser: https://github.com/neo954/kc57_battery
+Vcs-Git: https://github.com/neo954/kc57_battery.git
+
+Package: kc57-battery
+Architecture: any
+Depends: ${misc:Depends}
+Section: misc
+Priority: optional
+Description: DKMS package for kc57_battery module
+	DKMS package for kc57_battery kernel module.
