@@ -8,6 +8,12 @@ include /usr/share/dpkg/pkg-info.mk
 override_dh_install:
 	dh_install *.c *.h Makefile usr/src/kc57_battery-$(DEB_VERSION_UPSTREAM)/
 
+# Known present: amd64 i386
+ifneq ($(filter $(DEB_HOST_ARCH),amd64 i386),)
+	# Install the modules loader for kc57-battery only on allow-listed architectures where these are known-present
+	install -D -m 644 debian/local/modules-load.conf debian/kc57-battery/etc/modules-load.d/kc57-battery.conf
+endif
+
 override_dh_dkms:
 	dh_dkms -V $(DEB_VERSION_UPSTREAM)
 
