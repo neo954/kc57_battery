@@ -2,7 +2,7 @@
 This a Linux kernel battery driver for Intel Whitebook LAPKC71F/LAPKC71E/LAPKC51F systems (Intel NUC X15, XMG Fusion 15m22, ...). This is a minimized battery kernel module, picked out from [qc71_laptop module][qc71-laptop-github]. You can use this module with [TUXEDO Control Center][tcc-github].
 
 
-# The below is original reamde
+# The below is the original README
 
 # What is it?
 This a Linux kernel platform driver for Intel Whitebook LAPQC71X systems (XMG Fusion 15, Eluktronics MAG 15, Aftershock Vapor 15, ...).
